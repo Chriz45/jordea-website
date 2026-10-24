@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jordea Datenschutz</title>
+<meta name="description" content="Datenschutzerklärung für die App Jordea und die Website jordea.de.">
+<meta name="theme-color" content="#fdf8f5">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="icon.png" alt="" width="32" height="32">Jordea</a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="support.html">Support</a>
+      <a href="datenschutz.html" aria-current="page">Datenschutz</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap doc">
+  <h1>Datenschutzerklärung</h1>
+  <p class="stand">Stand: 24. Oktober 2026 · gilt für die iOS-App „Jordea“ und die Website jordea.de</p>
+
+  <div class="box">
+    <p><strong>Kurz gesagt:</strong> Jordea speichert Gesundheitsdaten auf deinem Gerät und dem Gerät deiner Hebamme. Was zwischen euch übertragen wird, ist Ende-zu-Ende-verschlüsselt. Wir als Anbieter und unser Server-Dienstleister können die Inhalte nicht lesen. Es gibt kein Benutzerkonto mit Namen oder E-Mail, keine Werbung und kein Tracking.</p>
+  </div>
+
+  <h2>1. Wer verantwortlich ist</h2>
+  <h3>Anbieter der App und der Website</h3>
+  <address>
+    Chrizantus Ntsetegoh Nehring<br>
+    Hauptstraße 65<br>
+    74930 Ittlingen<br>
+    Deutschland<br>
+    E-Mail: <a href="mailto:support@jordea.de">support@jordea.de</a>
+  </address>
+  <h3>Deine Hebamme</h3>
+  <p>Für die Betreuung und ihre Dokumentation ist deine Hebamme verantwortlich. Sie entscheidet, welche Angaben sie für die Nachsorge braucht, und muss die Dokumentation nach den berufsrechtlichen Vorgaben aufbewahren. Fragen zu deiner Betreuungsdokumentation richtest du deshalb an deine Hebamme.</p>
+  <p>Wir stellen die App und den verschlüsselten Übertragungsdienst bereit. Auf die Inhalte haben wir keinen Zugriff.</p>
+
+  <h2>2. Welche Daten Jordea verarbeitet</h2>
+  <h3>Wenn du als Mutter eine Nachsorge anfragst</h3>
+  <ul>
+    <li>Name, Telefon, E-Mail und Adresse</li>
+    <li>errechneter Geburtstermin, Krankenkasse, Erst- oder Mehrgebärende, besondere Hinweise</li>
+    <li>nach der Geburt: Geburtsdatum und Angaben zu deinem Kind</li>
+    <li>Nachrichten an deine Hebamme</li>
+    <li>freiwillig: Tagebuch-Einträge (Stillen, Windeln, Temperatur, Stimmung, Notizen)</li>
+  </ul>
+  <h3>Was deine Hebamme dokumentiert</h3>
+  <p>Bei Hausbesuchen dokumentiert deine Hebamme zum Beispiel das Gewicht deines Babys, Stillen, Nabel, Rückbildung, Wochenfluss und dein Wohlbefinden. Diese Angaben sind Gesundheitsdaten im Sinne von Art. 9 DSGVO. Sie werden auf dem Gerät deiner Hebamme gespeichert.</p>
+
+  <h2>3. Wo die Daten gespeichert werden</h2>
+  <p>Jordea speichert alle Daten lokal auf dem iPhone oder iPad, geschützt durch die Gerätesperre und auf Wunsch durch Face ID. Es gibt keine zentrale Datenbank mit Klartext-Daten. Wenn du die App löschst, werden die Daten auf deinem Gerät gelöscht.</p>
+  <p>Backups, die deine Hebamme anlegt, sind mit ihrem Passwort verschlüsselt (AES-256) und liegen dort, wo sie die Datei speichert.</p>
+
+  <h2>4. Übertragung zwischen Mutter und Hebamme</h2>
+  <p>Anfragen, Termine, Nachrichten und geteilte Tagebuch-Einträge werden auf dem sendenden Gerät verschlüsselt und erst auf dem empfangenden Gerät wieder entschlüsselt (Ende-zu-Ende-Verschlüsselung). Dazwischen liegen sie als verschlüsselte „Umschläge“ in einem Postfach auf einem Server von Google Firebase.</p>
+  <ul>
+    <li><strong>Anbieter:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland</li>
+    <li><strong>Standort:</strong> Rechenzentrum Frankfurt am Main (europe-west3)</li>
+    <li><strong>Gespeichert:</strong> der verschlüsselte Umschlag, eine zufällige Postfach-Kennung, Zeitpunkt und Ablaufdatum</li>
+    <li><strong>Löschung:</strong> Abgeholte Umschläge werden sofort gelöscht, nicht abgeholte nach 30 Tagen.</li>
+    <li><strong>Anmeldung:</strong> Jedes Gerät meldet sich anonym an. Es bekommt nur eine zufällige Kennung, ohne Name oder E-Mail.</li>
+  </ul>
+  <p>Google kann die Inhalte nicht lesen. Wir haben mit Google einen Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO geschlossen.</p>
+  <h3>Schutz vor Missbrauch</h3>
+  <p>Damit nur die echte Jordea-App Umschläge einwerfen kann, nutzt Jordea Firebase App Check mit App Attest von Apple. Dabei bestätigt Apple, dass die Anfrage von einer unveränderten Jordea-App kommt. Personenbezogene Inhalte werden dafür nicht übertragen. Der Server begrenzt außerdem die Zahl der Umschläge pro Postfach.</p>
+
+  <h2>5. Mitteilungen</h2>
+  <p>Damit du erfährst, dass neue Post da ist, nutzt Jordea den Apple Push Notification Service (Apple) und Firebase Cloud Messaging (Google). Dafür wird ein Geräte-Kennzeichen gespeichert. Die Mitteilung lautet immer nur „Du hast neue Post“. Namen oder Inhalte werden nie übertragen. Für die Zustellung können Apple und Google Daten auch in den USA verarbeiten. Beide sind nach dem EU-US Data Privacy Framework zertifiziert.</p>
+  <p>Erinnerungen, etwa an die U2 und U3 oder an Termine, erzeugt die App lokal auf deinem Gerät.</p>
+
+  <h2>6. Funktionen auf dem Gerät</h2>
+  <ul>
+    <li><strong>Face ID / Code:</strong> Die Prüfung erfolgt durch iOS. Jordea erhält keine biometrischen Daten.</li>
+    <li><strong>Diktat:</strong> Die Spracherkennung läuft ausschließlich auf dem Gerät. Die Aufnahme wird nicht gespeichert und nicht gesendet.</li>
+    <li><strong>Textvorschläge:</strong> Einige Zusammenfassungen und Vorschläge erzeugt Apple Intelligence direkt auf dem Gerät, ohne Server.</li>
+    <li><strong>Mutterpass scannen:</strong> Die Texterkennung läuft auf dem Gerät. Die Fotos werden nicht gespeichert.</li>
+    <li><strong>Kalender:</strong> Auf Wunsch trägt Jordea Besuche pseudonymisiert ein, nur mit Initialen und Ort.</li>
+    <li><strong>Apple Karten:</strong> Für Adressen, Fahrzeiten und Routen sendet die App die Adressen an Apple. Gesundheitsdaten werden dabei nicht übertragen. Es gilt die <a href="https://www.apple.com/de/legal/privacy/">Datenschutzrichtlinie von Apple</a>.</li>
+  </ul>
+
+  <h2>7. Weitergabe an andere Hebammen</h2>
+  <h3>Empfehlung einer Kollegin</h3>
+  <p>Ist deine Hebamme ausgebucht, kann sie dir eine Kollegin empfehlen. Du erhältst nur deren Kontaktdaten. Deine Daten gibt deine Hebamme dabei nicht weiter. Entscheidest du dich für die Kollegin, schickt deine App deine Anfrage selbst an sie.</p>
+  <h3>Vertretung</h3>
+  <p>Bei Urlaub oder Krankheit gibt deine Hebamme Angaben zu deiner Betreuung nur weiter, wenn du dem gesondert zugestimmt hast. Die Weitergabe gilt nur für die Zeit der Vertretung und ist Ende-zu-Ende-verschlüsselt. Bei der Vertretung werden die Angaben nach 60 Tagen gelöscht.</p>
+
+  <h2>8. Keine Werbung, kein Tracking</h2>
+  <p>Jordea enthält keine Werbung, keine Analyse- oder Tracking-Werkzeuge und verkauft keine Daten. Wir erstellen keine Nutzungsprofile.</p>
+
+  <h2>9. Rechtsgrundlagen</h2>
+  <ul>
+    <li>Gesundheitsdaten: deine ausdrückliche Einwilligung (Art. 9 Abs. 2 lit. a und Art. 6 Abs. 1 lit. a DSGVO). Die Einwilligung holt die App vor dem Senden der Anfrage ein und speichert, welcher Fassung du zugestimmt hast.</li>
+    <li>Für dein Kind willigst du als Sorgeberechtigte ein.</li>
+    <li>Aufbewahrung der Dokumentation durch die Hebamme: gesetzliche Pflicht (Art. 6 Abs. 1 lit. c und Art. 9 Abs. 2 lit. h DSGVO).</li>
+    <li>Technischer Betrieb und Schutz vor Missbrauch: berechtigtes Interesse an einem sicheren Dienst (Art. 6 Abs. 1 lit. f DSGVO).</li>
+  </ul>
+
+  <h2>10. Widerruf und Löschung</h2>
+  <p>Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen: in der App unter „Anfrage &amp; Angaben“ → „Einwilligung widerrufen“. Deine Daten werden dann auf deinem iPhone gelöscht. Deine Hebamme erhält den Widerruf automatisch und löscht deine Angaben. Was sie aus gesetzlichen Gründen aufbewahren muss, wird gesperrt und nicht mehr verwendet.</p>
+
+  <h2>11. App Store</h2>
+  <p>Jordea wird über den App Store von Apple vertrieben. Beim Herunterladen verarbeitet Apple Daten wie deine Apple-ID in eigener Verantwortung. Darauf haben wir keinen Einfluss.</p>
+
+  <h2>12. Die Website jordea.de</h2>
+  <h3>Hosting</h3>
+  <p>Die Website wird über GitHub Pages bereitgestellt (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Beim Aufruf verarbeitet GitHub technisch notwendige Daten, insbesondere deine IP-Adresse, Datum und Uhrzeit sowie Browser-Informationen. Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren Betrieb (Art. 6 Abs. 1 lit. f DSGVO). GitHub ist nach dem EU-US Data Privacy Framework zertifiziert. Details stehen in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
+  <h3>Keine Cookies, keine externen Dienste</h3>
+  <p>Die Website setzt keine Cookies, nutzt keine Analyse-Werkzeuge und lädt keine Schriften oder Skripte von fremden Servern.</p>
+  <h3>E-Mail an uns</h3>
+  <p>Wenn du uns schreibst, nutzen wir deine Adresse und Nachricht nur, um deine Anfrage zu beantworten (Art. 6 Abs. 1 lit. b und f DSGVO). Bitte schick uns keine Gesundheitsdaten per E-Mail.</p>
+
+  <h2>13. Deine Rechte</h2>
+  <p>Du hast das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21 DSGVO). Zu deiner Betreuungsdokumentation wende dich an deine Hebamme, zu allem anderen an <a href="mailto:support@jordea.de">support@jordea.de</a>.</p>
+  <p>Du kannst dich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren. Zuständig für uns ist der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173 Stuttgart.</p>
+
+  <h2>14. Keine Diagnosen</h2>
+  <p>Jordea dokumentiert und informiert. Die App stellt keine Diagnosen und ersetzt keine Untersuchung durch Hebamme, Ärztin oder Arzt. Im Notfall wähle 112.</p>
+
+  <h2>15. Änderungen</h2>
+  <p>Wenn sich die App oder die Rechtslage ändert, passen wir diese Erklärung an. Ändert sich etwas an der Verarbeitung deiner Gesundheitsdaten, fragt die App erneut nach deiner Zustimmung.</p>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Chrizantus Nehring</span>
+    <nav aria-label="Rechtliches">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html" aria-current="page">Datenschutz</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
