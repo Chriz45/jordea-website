@@ -23,7 +23,7 @@
 
 <main class="wrap doc">
   <h1>Datenschutzerklärung</h1>
-  <p class="stand">Stand: 24. Oktober 2026 · gilt für die iOS-App „Jordea“ und die Website jordea.de</p>
+  <p class="stand">Stand: 9. November 2026 · gilt für die iOS-App „Jordea“ und die Website jordea.de</p>
 
   <div class="box">
     <p><strong>Kurz gesagt:</strong> Jordea speichert Gesundheitsdaten auf deinem Gerät und dem Gerät deiner Hebamme. Was zwischen euch übertragen wird, ist Ende-zu-Ende-verschlüsselt. Wir als Anbieter und unser Server-Dienstleister können die Inhalte nicht lesen. Es gibt kein Benutzerkonto mit Namen oder E-Mail, keine Werbung und kein Tracking.</p>
@@ -55,7 +55,8 @@
   <p>Bei Hausbesuchen dokumentiert deine Hebamme zum Beispiel das Gewicht deines Babys, Stillen, Nabel, Rückbildung, Wochenfluss und dein Wohlbefinden. Diese Angaben sind Gesundheitsdaten im Sinne von Art. 9 DSGVO. Sie werden auf dem Gerät deiner Hebamme gespeichert.</p>
 
   <h2>3. Wo die Daten gespeichert werden</h2>
-  <p>Jordea speichert alle Daten lokal auf dem iPhone oder iPad, geschützt durch die Gerätesperre und auf Wunsch durch Face ID. Es gibt keine zentrale Datenbank mit Klartext-Daten. Wenn du die App löschst, werden die Daten auf deinem Gerät gelöscht.</p>
+  <p>Jordea speichert alle Daten lokal auf dem iPhone oder iPad, geschützt durch die Gerätesperre und auf Wunsch durch Face ID. Es gibt keine zentrale Datenbank mit Gesundheitsdaten. Wenn du die App löschst, werden die Daten in der App gelöscht. Die Schlüssel für die Verschlüsselung und die Postfach-Kennung liegen geschützt im Schlüsselbund von iOS und können dort auch nach dem Löschen der App erhalten bleiben; sie enthalten keine Gesundheitsdaten.</p>
+  <p>Auf dem Gerät einer Mutter sind die Daten Teil des normalen iPhone-Backups (iCloud oder Computer) und damit so geschützt wie dein übriges Backup. Auf dem Gerät der Hebamme sind die Betreuungsdaten vom iCloud-Backup ausgenommen.</p>
   <p>Backups, die deine Hebamme anlegt, sind mit ihrem Passwort verschlüsselt (AES-256) und liegen dort, wo sie die Datei speichert.</p>
 
   <h2>4. Übertragung zwischen Mutter und Hebamme</h2>
@@ -65,14 +66,19 @@
     <li><strong>Standort:</strong> Rechenzentrum Frankfurt am Main (europe-west3)</li>
     <li><strong>Gespeichert:</strong> der verschlüsselte Umschlag, eine zufällige Postfach-Kennung, Zeitpunkt und Ablaufdatum</li>
     <li><strong>Löschung:</strong> Abgeholte Umschläge werden sofort gelöscht, nicht abgeholte nach 30 Tagen.</li>
-    <li><strong>Anmeldung:</strong> Jedes Gerät meldet sich anonym an. Es bekommt nur eine zufällige Kennung, ohne Name oder E-Mail.</li>
+    <li><strong>Anmeldung:</strong> Jedes Gerät meldet sich anonym an (Firebase Authentication). Es bekommt nur eine zufällige Kennung, ohne Name oder E-Mail.</li>
+    <li><strong>Postfach:</strong> Zum Postfach speichert der Server die anonyme Kennung der Besitzerin, einen Hash ihres Zugangsgeheimnisses und gegebenenfalls das Geräte-Kennzeichen für Mitteilungen (siehe 5). Das Postfach bleibt bestehen, solange die Verbindung genutzt wird. Auf Wunsch löschen wir es: support@jordea.de.</li>
   </ul>
   <p>Google kann die Inhalte nicht lesen. Wir haben mit Google einen Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO geschlossen.</p>
   <h3>Schutz vor Missbrauch</h3>
-  <p>Damit nur die echte Jordea-App Umschläge einwerfen kann, nutzt Jordea Firebase App Check mit App Attest von Apple. Dabei bestätigt Apple, dass die Anfrage von einer unveränderten Jordea-App kommt. Personenbezogene Inhalte werden dafür nicht übertragen. Der Server begrenzt außerdem die Zahl der Umschläge pro Postfach.</p>
+  <p>Damit nur die echte Jordea-App Umschläge einwerfen kann, nutzt Jordea Firebase App Check mit App Attest von Apple. Auf älteren Geräten ohne App Attest wird stattdessen DeviceCheck von Apple genutzt. Dabei bestätigt Apple, dass die Anfrage von einer unveränderten Jordea-App kommt. Personenbezogene Inhalte werden dafür nicht übertragen. Der Server begrenzt außerdem die Zahl der Umschläge pro Postfach.</p>
+
+  <h3>Aushang der Hebamme</h3>
+  <p>Damit verbundene Mütter sehen, wie ihre Hebamme erreichbar ist, veröffentlicht die Hebammen-App einen „Aushang“ unter ihrer zufälligen Postfach-Kennung: Name, Telefon, E-Mail, Erreichbarkeitszeiten, Einzugsgebiet, Verfügbarkeit je Geburtsmonat, Abwesenheitszeiträume (ohne Grund) mit Name und Telefon der Vertretung sowie die Freigabe der Infotexte. Der Aushang ist von der Hebamme signiert, aber nicht verschlüsselt. Er enthält keine Daten von Müttern. Abrufen kann ihn nur, wer die Postfach-Kennung aus dem QR-Code oder Einladungslink der Hebamme kennt. Rechtsgrundlage ist die Bereitstellung des Dienstes für die Hebamme (Art. 6 Abs. 1 lit. b DSGVO); die Hebamme trägt eine Vertretung nur mit deren Einverständnis ein.</p>
 
   <h2>5. Mitteilungen</h2>
   <p>Damit du erfährst, dass neue Post da ist, nutzt Jordea den Apple Push Notification Service (Apple) und Firebase Cloud Messaging (Google). Dafür wird ein Geräte-Kennzeichen gespeichert. Die Mitteilung lautet immer nur „Du hast neue Post“. Namen oder Inhalte werden nie übertragen. Für die Zustellung können Apple und Google Daten auch in den USA verarbeiten. Beide sind nach dem EU-US Data Privacy Framework zertifiziert.</p>
+  <p>Die App meldet sich erst für Mitteilungen an, wenn du dich mit deiner Hebamme verbindest bzw. als Hebamme Online-Anfragen einschaltest.</p>
   <p>Erinnerungen, etwa an die U2 und U3 oder an Termine, erzeugt die App lokal auf deinem Gerät.</p>
 
   <h2>6. Funktionen auf dem Gerät</h2>
